@@ -11,7 +11,7 @@ Using Easy Script is very easy to do.
 1. Install the package using the following command:
 
 ```bash
-$ npm install easyscript
+$ npm install easyscriptjs
 ```
 
 2. Import the modules you require.
@@ -20,13 +20,13 @@ $ npm install easyscript
 ```js
 // List all of the modules you want to use in the brackets
 // Example: { log, print }
-const { print } = require("easyscript");
+const { print } = require("easyscriptjs");
 ```
 
 3. Use it!
 
 ```js
-const { print } = require("easyscript");
+const { print } = require("easyscriptjs");
 
 print("Hello World");
 ```
