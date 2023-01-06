@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://easyscriptjs.github.io/images/cover.png" height="368">
+  <img src="https://easyscriptjs.github.io/images/cover.png">
 </p>
 
 <h1 align="center">Easy Script</h1>
