@@ -11,7 +11,7 @@ Using Easy Script is very easy to do.
 1. Install the package using the following command:
 
 ```bash
-$ npm install easyscriptjs
+npm install easyscriptjs
 ```
 
 2. Import the modules you require.
@@ -33,16 +33,31 @@ print("Hello World");
 
 ## Modules
 
-### print
-  - The print module allows you to use `console.log` as if it was Python.
+### flip
+  - The flip module is a module which flips a coin and returns `heads` or `tails`.
   - Example:
     ```js
-    print("Hello World")
+    const { flip, print } = require("easyscriptjs");
+
+    const result = flip();
+
+    print(result);
     ```
 
 ### log
   - The log module lets you use a shortened version of `console.log` in Node.js.
   - Example:
     ```js
-    log("Hello World")
+    const { log } = require("easyscriptjs");
+
+    log("Hello World");
+    ```
+
+### print
+  - The print module allows you to use `console.log` as if it was Python.
+  - Example:
+    ```js
+    const { print } = require("easyscriptjs");
+
+    print("Hello World");
     ```
