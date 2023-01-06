@@ -1,8 +1,15 @@
 <p align="center">
-  <img src="https://easyscriptjs.github.io/images/cover.png">
+  <img src="https://easyscriptjs.github.io/images/cover.png" height="368">
 </p>
 
 <h1 align="center">Easy Script</h1>
+
+<p align="center">
+  <img alt="Lastest Release" src="https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge">
+  <img alt="GitHub Issues" src="https://img.shields.io/github/issues-raw/easyscriptjs/easyscript?label=Issues&style=for-the-badge">
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr-raw/easyscriptjs/easyscript?label=Pull%20Requests&style=for-the-badge">
+</p>
+
 <p align="center">Easy Script is a npm package which makes coding in JavaScript easy!</p>
 
 ## Usage
@@ -19,7 +26,7 @@ npm install easyscriptjs
 
 ```js
 // List all of the modules you want to use in the brackets
-// Example: { log, print }
+// Example: { flip, print, random }
 const { print } = require("easyscriptjs");
 ```
 
@@ -34,73 +41,98 @@ print("Hello World");
 ## Modules
 
 ### flip
-  - The flip module is a module which flips a coin and returns `heads` or `tails`.
-  - Example:
-    ```js
-    const { flip } = require("easyscriptjs");
+The flip module is a module which flips a coin and returns `heads` or `tails`.
 
-    const result = flip();
+**Example**
 
-    console.log(result);
-    ```
+```js
+// Import module
+const { flip } = require("easyscriptjs");
+
+// Generate a result
+const result = flip();
+
+// Log result to console
+console.log(result);
+```
 
 ### log
-  - The log module lets you use a shortened version of `console.log` in Node.js. It also supports variables as well.
-  - Example with text:
-    ```js
-    const { log } = require("easyscriptjs");
+The log module lets you use a shortened version of `console.log` in Node.js. It also supports variables as well.
 
-    // Logs the text to console
-    log("Hello World");
-    ```
-  - Example with a variable:
-    ```js
-    const { log } = require("easyscriptjs");
+**Examples**
 
-    const text = "Hello World";
+- With text:
+```js
+// Import module
+const { log } = require("easyscriptjs");
 
-    // Logs the text from the variable to console
-    log(text);
-    ```
+// Logs text to console
+log("Hello World");
+```
+
+- With a variable:
+```js
+// Import module
+const { log } = require("easyscriptjs");
+
+// Text to be logged
+const text = "Hello World";
+
+// Logs the "text" variable to console
+log(text);
+```
 
 ### print
-  - The print module allows you to use `console.log` as if it was Python. It also supports variables as well.
-  - Example with text:
-    ```js
-    const { print } = require("easyscriptjs");
+The print module allows you to use `console.log` as if it was Python. It also supports variables as well.
 
-    // Logs the text to console
-    print("Hello World");
-    ```
-  - Example with a variable:
-    ```js
-    const { print } = require("easyscriptjs");
+**Examples**
 
-    const text = "Hello World";
+- With text:
+```js
+// Import module
+const { print } = require("easyscriptjs");
 
-    // Logs the text from the variable to console
-    print(text);
-    ```
+// Logs the text to console
+print("Hello World");
+```
+
+- With a variable:
+```js
+// Import module
+const { print } = require("easyscriptjs");
+
+// Text to be logged
+const text = "Hello World";
+
+// Logs the "text" variable to console
+print(text);
+```
 
 ### random
-  - The random module allows you to generate a random number. By default the highest number is `100`, but you can change that by specifying a number in the function. The highest number supported is `2,147,483,647` as that is the 32-bit integer limit.
-  - Example without input:
-    ```js
-    const { random } = require("easyscriptjs");
+The random module allows you to generate a random number. By default the highest number is `100`, but you can change that by specifying a number in the function. The highest number supported is `2,147,483,647` as that is the 32-bit integer limit.
 
-    // Generates a result from 1-100
-    const result = random();
+**Examples**
 
-    // Generates a random number from 1 to 100 (the default)
-    console.log(result);
-    ```
-  - Example with input:
-    ```js
-    const { random } = require("easyscriptjs");
+- Without input:
+```js
+// Import module
+const { random } = require("easyscriptjs");
 
-    // Generates a random number from 1 to 30
-    const result = random(30);
+// Generates a result from 1-100
+const result = random();
 
-    // Logs the result to console
-    console.log(result);
-    ```
+// Generates a random number from 1 to 100 (the default)
+console.log(result);
+```
+
+- Example with input:
+```js
+// Import module
+const { random } = require("easyscriptjs");
+
+// Generates a random number from 1 to 30
+const result = random(30);
+
+// Logs the result to console
+console.log(result);
+```
