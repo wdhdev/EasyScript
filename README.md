@@ -1,8 +1,15 @@
 <p align="center">
-  <img src="https://easyscriptjs.github.io/images/cover.png">
+  <img src="https://easyscriptjs.github.io/images/cover.png" height="368">
 </p>
 
 <h1 align="center">Easy Script</h1>
+
+<p align="center">
+  <img alt="Lastest Release" src="https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge">
+  <img alt="GitHub Issues" src="https://img.shields.io/github/issues-raw/easyscriptjs/easyscript?label=Issues&style=for-the-badge">
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr-raw/easyscriptjs/easyscript?label=Pull%20Requests&style=for-the-badge">
+</p>
+
 <p align="center">Easy Script is a npm package which makes coding in JavaScript easy!</p>
 
 ## Usage
@@ -19,7 +26,7 @@ npm install easyscriptjs
 
 ```js
 // List all of the modules you want to use in the brackets
-// Example: { log, print }
+// Example: { flip, print, random }
 const { print } = require("easyscriptjs");
 ```
 
