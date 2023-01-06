@@ -1,4 +1,4 @@
 module.exports = {
-    "log": require("./functions/log"),
-    "print": require("./functions/print")
+    "log": require("./modules/log"),
+    "print": require("./modules/print")
 }
