@@ -4,11 +4,11 @@ module.exports = {
     "print": require("./modules/print"),
     "random": require("./modules/random"),
     "util": {
-        "boolToNum": require("./util/boolToNum"),
-        "boolToStr": require("./util/boolToStr"),
-        "numToStr": require("./util/numToStr"),
-        "strToBool": require("./util/strToBool"),
-        "strToNum": require("./util/strToNum")
+        "boolToNum": require("./modules/util/boolToNum"),
+        "boolToStr": require("./modules/util/boolToStr"),
+        "numToStr": require("./modules/util/numToStr"),
+        "strToBool": require("./modules/util/strToBool"),
+        "strToNum": require("./modules/util/strToNum")
     },
     "uuid": require("./modules/uuid")
 }
