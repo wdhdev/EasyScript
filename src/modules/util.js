@@ -1,4 +1,6 @@
 module.exports = {
     "boolToStr": require("./util/boolToStr"),
-    "strToBool": require("./util/strToBool")
+    "numToStr": require("./util/numToStr"),
+    "strToBool": require("./util/strToBool"),
+    "strToNum": require("./util/strToNum")
 }
