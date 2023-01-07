@@ -1,6 +1,6 @@
 {
   "name": "easyscriptjs",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Easy Script is a npm package which makes coding in JavaScript easy!",
   "main": "src/index.js",
   "scripts": {},
@@ -15,10 +15,10 @@
     "js",
     "script"
   ],
-  "author": "William Harrison",
+  "author": "Easy Script <packages@easyscript.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EasyScriptJS/EasyScript/issues"
   },
-  "homepage": "https://github.com/EasyScriptJS/EasyScript#readme"
+  "homepage": "https://easyscript.dev"
 }
