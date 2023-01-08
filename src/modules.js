@@ -10,5 +10,6 @@ module.exports = {
         "strToBool": require("./modules/util/strToBool"),
         "strToNum": require("./modules/util/strToNum")
     },
+    "removeDuplicates": require("./modules/removeDuplicates"),
     "uuid": require("./modules/uuid")
 }
