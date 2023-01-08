@@ -130,4 +130,4 @@ const removeDuplicates = (
   return Array.from(new Set(newArray));
 };
 
-module.exports = { removeDuplicates };
+module.exports = removeDuplicates;
