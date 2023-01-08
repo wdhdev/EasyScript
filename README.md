@@ -16,4 +16,4 @@
 <p align="center">If you want to learn how to use Easy Script, you can find all of the information you need on the <a href="https://docs.easyscript.dev/usage">docs</a>.</p>
 
 <h2 align="center">Modules</h2>
-<p align="center">If you want to learn more about Easy Script's modules, you can find information on all of the modules on the <a href="https://docs.easyscript.dev/modules">docs</a>.</p>
+<p align="center">If you want to learn more about Easy Script's modules, you can find all the information you need on the <a href="https://docs.easyscript.dev/modules">docs</a>.</p>
