@@ -11,9 +11,9 @@
   "keywords": [
     "easy",
     "easyscript",
-    "javascript",
-    "js",
-    "script"
+    "type-converter",
+    "types",
+    "uuid"
   ],
   "author": "Easy Script <packages@easyscript.dev>",
   "license": "MIT",
