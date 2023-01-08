@@ -13,7 +13,7 @@
 <p align="center">Easy Script is a npm package which makes coding in JavaScript easy!</p>
 
 <h2 align="center">Usage</h2>
-<p align="center">If you want to learn how to use Easy Script, you can find all of the information you need on the <a href="https://github.com/EasyScriptJS/EasyScript/wiki/Usage">wiki</a>.</p>
+<p align="center">If you want to learn how to use Easy Script, you can find all of the information you need on the <a href="https://docs.easyscript.dev/usage">docs</a>.</p>
 
 <h2 align="center">Modules</h2>
-<p align="center">If you want to learn more about Easy Script's modules, you can find information on all of the modules on the <a href="https://github.com/EasyScriptJS/EasyScript/wiki/Modules">wiki</a>.</p>
+<p align="center">If you want to learn more about Easy Script's modules, you can find information on all of the modules on the <a href="https://docs.easyscript.dev/modules">docs</a>.</p>
