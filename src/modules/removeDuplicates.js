@@ -2,6 +2,7 @@ function MethodException(message) {
   this.message = message;
   this.name = "Method Error";
 }
+
 /**
  * @function removeDuplicates - Return an array that has no duplicate values
  * @param {Array<>} arr - An array of entries to be cleaned
@@ -10,6 +11,7 @@ function MethodException(message) {
  * @param {('none'|['alphabetic'|'numeric'|'lengthwise'])} [sort_by] - Sort the returned array by one or a combination of options - If multiple options exist will sort method by method - Default: 'none' (Optional)
  * @returns {Array} New array that has no duplicate values
  */
+
 const removeDuplicates = (
   arr,
   multi_dim = true,
@@ -18,19 +20,15 @@ const removeDuplicates = (
 ) => {
   // Flatten multi-dimensional arrays
   if (!Array.isArray(arr))
-    throw new MethodException(
-      `Illegal use of parameter arr - Expected Array - Found: ${typeof arr}`
-    );
+    throw new MethodException(`Illegal use of parameter arr - Expected Array - Found: ${typeof arr}`);
+
   let newArray = arr;
+
   if (multi_dim === true) {
     while (newArray.filter((e) => Array.isArray(e)).length > 0) {
       newArray = newArray.flat();
     }
-  } else if (typeof multi_dim !== "boolean") {
-    throw new MethodException(
-      `Illegal use of parameter multi_dim - Expected true or false - Found: ${multi_dim}`
-    );
-  }
+  } else if (typeof multi_dim !== "boolean") throw new MethodException(`Illegal use of parameter multi_dim - Expected true or false - Found: ${multi_dim}`);
 
   // Filter falsy values
   if (truthy_only === true) {
@@ -60,74 +58,47 @@ const removeDuplicates = (
         return false; // Default
       }
     });
-  } else if (typeof truthy_only !== "boolean") {
-    throw new MethodException(
-      `Illegal use of parameter multi_dim  - Expected true or false - Found: ${truthy_only}`
-    );
-  }
+  } else if (typeof truthy_only !== "boolean") throw new MethodException(`Illegal use of parameter multi_dim  - Expected true or false - Found: ${truthy_only}`);
 
   // Sort
   if (Array.isArray(sort_by)) {
-    // check if unacceptable values exist
-    const params_unknown = sort_by.filter(
-      (e) => e !== "alphabetic" && e !== "lengthwise" && e !== "numeric"
-    );
-    if (params_unknown.length > 0)
-      throw new MethodException(
-        `Illegal use of parameter sort_by - Expected ["alphabetic","numeric","lengthwise"] - Found: ${params_unknown}`
-      ); // illegal sort method(s)
-    // check for no methods in array
-    if (sort_by.length <= 0)
-      throw new MethodException(
-        `Illegal use of parameter sort_by - Expected ["alphabetic","numeric","lengthwise"] - Found empty array`
-      );
+    // Check if unacceptable values exist
+    const params_unknown = sort_by.filter((e) => e !== "alphabetic" && e !== "lengthwise" && e !== "numeric");
+
+    if (params_unknown.length > 0) throw new MethodException(`Illegal use of parameter sort_by - Expected ["alphabetic","numeric","lengthwise"] - Found: ${params_unknown}`); // Illegal sort method(s)
+
+    // Check for no methods in array
+    if (sort_by.length <= 0) throw new MethodException(`Illegal use of parameter sort_by - Expected ["alphabetic","numeric","lengthwise"] - Found empty array`);
+
     // Check for more than 3 methods
-    if (sort_by.length > 3)
-      throw new MethodException(
-        `Illegal use of parameter sort_by - Expected ["alphabetic","numeric","lengthwise"] - Overflow of methods`
-      );
-    // check for repetitive methods
+    if (sort_by.length > 3) throw new MethodException(`Illegal use of parameter sort_by - Expected ["alphabetic","numeric","lengthwise"] - Overflow of methods`);
+
+    // Check for repetitive methods
     const methodsHashMap = {};
-    sort_by.forEach((e) =>
-      methodsHashMap[e] > 0
-        ? (methodsHashMap[`${e}`] = methodsHashMap[`${e}`] + 1)
-        : (methodsHashMap[`${e}`] = 1)
-    );
+
+    sort_by.forEach((e) => methodsHashMap[e] > 0 ? (methodsHashMap[`${e}`] = methodsHashMap[`${e}`] + 1) : (methodsHashMap[`${e}`] = 1));
+
     for (const method in methodsHashMap) {
       if (methodsHashMap[method] > 1) {
-        throw new MethodException(
-          `Illegal use of parameter sort_by - Cannot use a method more than once - Duplicate methods : (${method})`
-        );
+        throw new MethodException(`Illegal use of parameter sort_by - Cannot use a method more than once - Duplicate methods : (${method})`);
       }
     }
 
     // Sorting
     sort_by.forEach((e) => {
       if (e === "alphabetic") {
-        newArray.sort((a, b) =>
-          typeof a === "string" && typeof b === "string"
-            ? a.localeCompare(b)
-            : -1
-        );
+        newArray.sort((a, b) => typeof a === "string" && typeof b === "string" ? a.localeCompare(b) : -1);
       } else if (e === "numeric") {
         newArray.sort((a, b) => a - b);
       } else if (e === "lengthwise") {
-        newArray.sort((a, b) =>
-          (typeof a === "string" && typeof b == "string") ||
-          (Array.isArray(a) && Array.isArray(b))
-            ? a.length - b.length
-            : -1
-        );
+        newArray.sort((a, b) => (typeof a === "string" && typeof b == "string") || (Array.isArray(a) && Array.isArray(b)) ? a.length - b.length : -1);
       }
     });
   } else if (sort_by === "none") {
   } // Okay
-  else {
-    throw new MethodException(
-      `Illegal use of parameter sort_by - Expected "none" or ["alphabetic","numeric","lengthwise"] - Found: ${sort_by}`
-    );
-  }
+  else throw new MethodException(`Illegal use of parameter sort_by - Expected "none" or ["alphabetic","numeric","lengthwise"] - Found: ${sort_by}`);
+
   return Array.from(new Set(newArray));
 };
 
-module.exports = removeDuplicates;
+module.exports = { removeDuplicates };
