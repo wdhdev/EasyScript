@@ -1,4 +1,4 @@
-modules.exports = {
+module.exports = {
     "flip": require("./modules/flip"),
     "id": require("./modules/id"),
     "log": require("./modules/log"),
