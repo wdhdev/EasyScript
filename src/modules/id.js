@@ -1,10 +1,10 @@
-import { types } from "../modules";
+const { types } = require("../index").modules;
 
 function generateId(length) {
     return parseInt(Math.ceil(Math.random() * 9999999999999999).toPrecision(length).toString().replace(".", ""));
 }
 
-module.exports = function (input) {
+function id(input) {
     let length = input;
 
     if(!input) throw new Error("No length specified");
@@ -20,3 +20,5 @@ module.exports = function (input) {
 
     return id;
 }
+
+module.exports = id;

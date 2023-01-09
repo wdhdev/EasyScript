@@ -1,3 +1,3 @@
 const modules = require("./modules");
 
-module.exports = modules;
+module.exports = { modules };

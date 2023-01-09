@@ -1,4 +1,4 @@
-module.exports = function (max) {
+function random(max) {
     let highest = 100;
 
     if(max && !isFinite(max)) throw new Error("Max number must be a number");
@@ -10,3 +10,5 @@ module.exports = function (max) {
 
     return result;
 }
+
+module.exports = random;

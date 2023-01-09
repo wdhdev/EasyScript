@@ -1,4 +1,4 @@
-module.exports = function (boolean) {
+function boolToNum(boolean) {
     if(typeof boolean !== "boolean") throw new Error("No boolean provided");
 
     let res;
@@ -8,3 +8,5 @@ module.exports = function (boolean) {
 
     return res;
 }
+
+module.exports = boolToNum;
