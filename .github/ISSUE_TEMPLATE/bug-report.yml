@@ -11,7 +11,7 @@ body:
     label: Is there an existing issue for this bug?
     description: Search for an existing issue to avoid duplicate issues.
     options:
-    - label: I have searched the [existing issues](https://github.com/EasyScriptJS/EasyScript/issues) for this issue.
+    - label: I have searched [existing issues](https://github.com/EasyScriptJS/EasyScript/issues) for a report of this bug.
       required: true
 - type: input
   id: what
