@@ -1,0 +1,22 @@
+name: Question
+description: Ask a question about the project.
+
+title: "[QUESTION] Title"
+labels: question
+
+body:
+- type: checkboxes
+  id: existing-issue
+  attributes:
+    label: Is there an existing question for this?
+    description: Search for an existing request to avoid duplicate requests.
+    options:
+    - label: I have searched for an [existing request](https://github.com/EasyScriptJS/EasyScript/issues).
+      required: true
+- type: textarea
+  id: question
+  attributes:
+    label: Question
+    description: Provide a description of the your question.
+  validations:
+    required: true
