@@ -8,10 +8,10 @@ body:
 - type: checkboxes
   id: existing-issue
   attributes:
-    label: Is there an existing issue for this bug?
-    description: Search for an existing issue to avoid duplicate issues.
+    label: Is there an existing issue for this?
+    description: Search for an existing issue to avoid duplicates.
     options:
-    - label: I have searched [existing issues](https://github.com/EasyScriptJS/EasyScript/issues) for a report of this bug.
+    - label: I have searched for an [existing issue](https://github.com/EasyScriptJS/EasyScript/issues).
       required: true
 - type: input
   id: what
