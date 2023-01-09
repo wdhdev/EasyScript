@@ -3,13 +3,15 @@ module.exports = {
     "log": require("./modules/log"),
     "print": require("./modules/print"),
     "random": require("./modules/random"),
+    "types": {
+        "boolToNum": require("./modules/types/boolToNum"),
+        "boolToStr": require("./modules/types/boolToStr"),
+        "numToStr": require("./modules/types/numToStr"),
+        "strToBool": require("./modules/types/strToBool"),
+        "strToNum": require("./modules/types/strToNum")
+    },
     "util": {
-        "boolToNum": require("./modules/util/boolToNum"),
-        "boolToStr": require("./modules/util/boolToStr"),
-        "numToStr": require("./modules/util/numToStr"),
-        "removeDuplicates": require("./modules/util/removeDuplicates"),
-        "strToBool": require("./modules/util/strToBool"),
-        "strToNum": require("./modules/util/strToNum")
+        "removeDuplicates": require("./modules/util/removeDuplicates")
     },
     "uuid": require("./modules/uuid")
 }
