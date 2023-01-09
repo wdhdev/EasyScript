@@ -1,3 +1,3 @@
-module.exports = function coinflip() {
+module.exports = function () {
     return Math.random() >= 0.5 ? "heads" : "tails";
 }

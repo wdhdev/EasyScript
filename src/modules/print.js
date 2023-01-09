@@ -1,4 +1,4 @@
-module.exports = function print(input) {
+module.exports = function (input) {
     if(!input) {
         throw new Error("No input specified");
     }

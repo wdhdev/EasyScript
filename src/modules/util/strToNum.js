@@ -1,4 +1,4 @@
-module.exports = function strToNum(string) {
+module.exports = function (string) {
     if(!string || (typeof string !== "string")) throw new Error("No string provided");
 
     if(!isFinite(string)) throw new Error("No valid string provided");

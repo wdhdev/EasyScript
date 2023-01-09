@@ -1,4 +1,4 @@
-module.exports = function uuid() {
+module.exports = function () {
     var d = new Date().getTime();
 
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
