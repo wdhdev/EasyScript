@@ -1,22 +1,13 @@
-const { types } = require("../index").modules;
+const { customAlphabet } = require("nanoid");
 
-function generateId(length) {
-    return parseInt(Math.ceil(Math.random() * 9999999999999999).toPrecision(length).toString().replace(".", ""));
-}
+function id(length) {
+    if(!length) throw new Error("No length specified");
+    if(typeof length !== "number") throw new Error("Invalid type specified");
 
-function id(input) {
-    let length = input;
+    if(length > 64) throw new Error("Length cannot be more than 64");
 
-    if(!input) throw new Error("No length specified");
-    if(typeof input !== "number" && typeof input !== "string") throw new Error("Invalid type specified\nValid types: number, string");
-
-    if(typeof input === "string") {
-        len = types.strToNum(input);
-    }
-
-    if(length > 16) throw new Error("Length cannot be more than 16");
-
-    const id = generateId(length);
+    const nanoid = customAlphabet("1234567890abcdefghijklmnopqrstuvwxyz", length);
+    const id = nanoid();
 
     return id;
 }

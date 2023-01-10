@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/EasyScriptJS/EasyScript/issues"
   },
-  "homepage": "https://easyscript.dev"
+  "homepage": "https://easyscript.dev",
+  "dependencies": {
+    "nanoid": "3.3.4"
+  }
 }
