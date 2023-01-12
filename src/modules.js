@@ -14,6 +14,5 @@ module.exports = {
     "util": {
         "removeDuplicates": require("./modules/util/removeDuplicates")
     },
-    "removeDuplicates": require("./modules/removeDuplicates"),
     "uuid": require("./modules/uuid")
 }
