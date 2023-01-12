@@ -1,3 +1,9 @@
+/**
+ * @function `random` - Used to generate a random number between 1 and a max value 
+ * @param {Number} [max] - The max value used. Condition: **`1 < max < 2_147_483_647`**
+ * @returns {Number} A random number between 1 and max (*parameter*). If max is *undefined*, will return a random number between 1 and 100
+ */
+
 function random(max) {
     let highest = 100;
 

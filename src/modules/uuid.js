@@ -1,3 +1,8 @@
+/**
+ * @function `uuid` - Randomly generate a unique UUID composed of random characters and numbers 
+ * @returns {String} A unique UUID string that follows this rule: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
+ */
+
 function uuid() {
     var d = new Date().getTime();
 
