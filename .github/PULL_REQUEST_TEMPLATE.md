@@ -6,15 +6,14 @@
 ## Codebase
 <!-- These requirements are only needed to be met if you are updating the codebase. -->
 
-- [ ] This code has been tested with the [latest release](https://github.com/EasyScriptJS/EasyScript/releases/tag/v1.1.3) of Easy Script.
-- [ ] This code works with the [latest release](https://github.com/EasyScriptJS/EasyScript/releases/tag/v1.1.3) of Easy Script.
+- [ ] This code has been tested with the [latest release](https://github.com/EasyScriptJS/EasyScript/releases/latest) of Easy Script.
+- [ ] This code works with the [latest release](https://github.com/EasyScriptJS/EasyScript/releases/latest) of Easy Script.
 - [ ] This code has been run through [Prettier](https://prettier.io).
 
 ### Modules
 <!-- If you are updating or adding a module, your code needs to meet these extra requirements. -->
 
 - [ ] I have provided documentation of how this code works. <!-- Only required if you are adding a feature to an existing module, or are adding a new module. -->
-- [ ] I have added the module to the [modules.js](https://github.com/EasyScriptJS/EasyScript/blob/main/src/modules.js) file in the correct key. <!-- Only required if you are adding a new module. -->
 
 # Description
 <!-- Provide a description of the changes made in this pull request below. -->
