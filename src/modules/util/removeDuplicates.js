@@ -65,7 +65,7 @@ const removeDuplicates = (
         });
     } else if (typeof truthy_only !== "boolean")
         throw new MethodException(
-            `Illegal use of parameter multi_dim  - Expected true or false - Found: ${truthy_only}`
+            `Illegal use of parameter truthy_only  - Expected true or false - Found: ${truthy_only}`
         );
 
     // Sort
@@ -122,7 +122,7 @@ const removeDuplicates = (
             } else if (e === "lengthwise") {
                 newArray.sort((a, b) =>
                     (typeof a === "string" && typeof b == "string") ||
-                    (Array.isArray(a) && Array.isArray(b))
+                        (Array.isArray(a) && Array.isArray(b))
                         ? a.length - b.length
                         : -1
                 );
