@@ -1,6 +1,6 @@
 {
   "name": "easyscriptjs",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Easy Script is a npm package which makes coding in JavaScript easy!",
   "main": "src/index.js",
   "scripts": {},
