@@ -1,23 +1,16 @@
-function MethodException(message) {
-    this.message = message;
-    this.name = "Method Error";
+class MethodException extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = "Method Error";
+    }
 }
 
-/**
- * @function removeDuplicates - Return an array that has no duplicate values
- * @param {Array<>} arr - An array of entries to be cleaned
- * @param {Boolean} [multi_dim=true] - Turn multi-dimensional arrays to one-dimensional before removing duplicates - Default: True (Optional)
- * @param {Boolean} [truthy_only=true] - Remove falsy values (empty string " ", undefined, null, false, true, empty arrays [], empty objects {}, functions) - Default: True (Optional)
- * @param {('none'|['alphabetic'|'numeric'|'lengthwise'])} [sort_by] - Sort the returned array by one or a combination of options - If multiple options exist will sort method by method - Default: 'none' (Optional)
- * @returns {Array} New array that has no duplicate values
- */
-
 const removeDuplicates = (
-    arr,
-    multi_dim = true,
-    truthy_only = true,
-    sort_by = "none"
-) => {
+    arr: any[],
+    multi_dim: boolean = true,
+    truthy_only: boolean = true,
+    sort_by: 'none' | 'alphabetic' | 'numeric' | 'lengthwise' = "none"
+): any[] => {
     // Flatten multi-dimensional arrays
     if (!Array.isArray(arr))
         throw new MethodException(
@@ -138,4 +131,4 @@ const removeDuplicates = (
     return Array.from(new Set(newArray));
 };
 
-module.exports = removeDuplicates;
+export default removeDuplicates;

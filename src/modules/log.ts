@@ -4,10 +4,9 @@
  * @returns {Function} an Instance of console.log() that is executed instantly using `input` 
  */
 
-function log(input) {
-    if(!input) throw new Error("No input specified");
+export const log = (input: any): void => {
+    if (!input) throw new Error("No input specified");
 
-    return console.log(input);
+    console.log(input);
 }
 
-module.exports = log;
