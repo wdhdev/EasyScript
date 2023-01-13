@@ -4,8 +4,6 @@
  * @returns {string} Returns "heads" or "tails" (*as string*)
  */
 
-function flip() {
+export const flip = (): string => {
     return Math.random() >= 0.5 ? "heads" : "tails";
 }
-
-module.exports = flip;
