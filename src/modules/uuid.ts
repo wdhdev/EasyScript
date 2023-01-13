@@ -3,7 +3,7 @@
  * @returns {String} A unique UUID string that follows this rule: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
  */
 
-function uuid() {
+export const uuid = (): string => {
     var d = new Date().getTime();
 
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
@@ -18,5 +18,3 @@ function uuid() {
         }
     )
 }
-
-module.exports = uuid;
