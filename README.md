@@ -7,7 +7,6 @@
   <img alt="Status" src="https://img.shields.io/badge/status-active-success.svg?style=for-the-badge" />
   <img alt="GitHub Issues" src="https://img.shields.io/github/issues/EasyScriptJS/EasyScript.svg?style=for-the-badge" />
   <img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/EasyScriptJS/EasyScript.svg?style=for-the-badge" />
-  <img alt="License" src="https://img.shields.io/badge/license-%20Creative%20Commons-blue?style=for-the-badge" />
 </p>
 
 ---
