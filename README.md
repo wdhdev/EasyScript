@@ -12,11 +12,11 @@
 
 ---
 
-# 🔻 Easy Script.js<a name = "about"></a>
+# 📄 Easy Script
 
 Easy Script is a npm package which makes coding in JavaScript easy!
 
-<br />
+<br>
 
 ## 📝 Table of Contents
 
@@ -25,7 +25,7 @@ Easy Script is a npm package which makes coding in JavaScript easy!
 - [Built Using](#built_using)
 - [Authors](#authors)
 
-<br />
+<br>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -68,7 +68,7 @@ See [docs](https://docs.easyscript.dev) on how to use this package's functions a
 
 <br />
 
-## 🤔 But Why ?
+## 🤔 Why?
 
 - Easier yet Flexible.
 - Beginner Friendly
