@@ -65,7 +65,7 @@ See [docs](https://docs.easyscript.dev) on how to use this package's functions a
 - [TypeScript](https://www.typescriptlang.org) - Programming Language
 - [Node.js](https://nodejs.org) - Server Environment
 
-<br />
+<br>
 
 ## ✍️ Authors <a name = "authors"></a>
 
