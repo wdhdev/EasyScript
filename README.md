@@ -90,4 +90,4 @@ See [docs](https://docs.easyscript.dev) on how to use this package's functions a
 - [@WilliamDavidHarrison](https://github.com/WilliamDavidHarrison) - Idea & Initial work
 - [@avalynndev](https://github.com/avalynndev) - converting to typescript, documentation
 
-See also the list of [contributors](https://github.com/EasyScriptJS/EasyScript/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/EasyScriptJS/EasyScript/contributors) who have helped build this project.
