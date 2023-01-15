@@ -88,6 +88,6 @@ See [docs](https://docs.easyscript.dev) on how to use this package's functions a
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@WilliamDavidHarrison](https://github.com/WilliamDavidHarrison) - Idea & Initial work
-- [@avalynndev](https://github.com/avalynndev) - converting to typescript, documentation
+- [@avalynndev](https://github.com/avalynndev) - Docs Team
 
 See also the list of [contributors](https://github.com/EasyScriptJS/EasyScript/contributors) who have helped build this project.
