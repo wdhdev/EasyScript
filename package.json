@@ -1,27 +1,37 @@
 {
-  "name": "easyscriptjs",
-  "version": "1.1.6",
-  "description": "Easy Script is a npm package which makes coding in JavaScript easy!",
-  "main": "src/index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EasyScriptJS/EasyScript.git"
-  },
-  "keywords": [
-    "easy",
-    "easyscript",
-    "type-converter",
-    "types",
-    "uuid"
-  ],
-  "author": "Easy Script <packages@easyscript.dev>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EasyScriptJS/EasyScript/issues"
-  },
-  "homepage": "https://easyscript.dev",
-  "dependencies": {
-    "nanoid": "3.3.4"
-  }
+	"name": "easyscriptjs",
+	"version": "2.0.0",
+	"description": "Easy Script is a npm package which makes coding in JavaScript easy!",
+	"main": "lib/index.js",
+	"typings": "typings/index.d.ts",
+	"scripts": {
+		"test": "node test",
+		"build": "tsc",
+		"git": "sh ./gitpush.sh",
+		"dev": "npm publish --tag dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EasyScriptJS/EasyScript.git"
+	},
+	"keywords": [
+		"easy",
+		"easyscript",
+		"type-converter",
+		"types",
+		"uuid"
+	],
+	"author": "Easy Script <packages@easyscript.dev>",
+	"bugs": {
+		"url": "https://github.com/EasyScriptJS/EasyScript/issues"
+	},
+	"homepage": "https://easyscript.dev",
+	"license": "CC BY-NC-ND 4.0",
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"typescript": "^4.9.4"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.12"
+	}
 }
