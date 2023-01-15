@@ -80,7 +80,7 @@ See [docs](https://docs.easyscript.dev) on how to use this package's functions a
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [Chalk](https://www.mongodb.com/) - Terminal string styling done right
-- [Typescript](https://www.typescriptlang.org) - Programming Language
+- [TypeScript](https://www.typescriptlang.org) - Programming Language
 - [Node.js](https://nodejs.org) - Server Environment
 
 <br />
