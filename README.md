@@ -4,7 +4,6 @@
 
 <p align="center">
   <img alt="Lastest Release" src="https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge" />
-  <img alt="Status" src="https://img.shields.io/badge/status-active-success.svg?style=for-the-badge" />
   <img alt="GitHub Issues" src="https://img.shields.io/github/issues/EasyScriptJS/EasyScript.svg?style=for-the-badge" />
   <img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/EasyScriptJS/EasyScript.svg?style=for-the-badge" />
 </p>
@@ -17,23 +16,8 @@ Easy Script is a npm package which makes coding in JavaScript easy!
 
 <br>
 
-## 📝 Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Built Using](#built_using)
-- [Authors](#authors)
-
-<br>
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get yuo ready for using easyscript. See [docs](https://docs.easyscript.dev) on how to use this package to make your work faster.
-
-<br />
-
 ## 🖥️ How to install ?
-
+These instructions will get yuo ready for using easyscript. See [docs](https://docs.easyscript.dev) on how to use this package to make your work faster.
 Requires Node.js version `16+` and npm version `8+`.
 (Use any one method)
 
@@ -78,7 +62,6 @@ See [docs](https://docs.easyscript.dev) on how to use this package's functions a
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [Chalk](https://www.mongodb.com/) - Terminal string styling done right
 - [TypeScript](https://www.typescriptlang.org) - Programming Language
 - [Node.js](https://nodejs.org) - Server Environment
 
