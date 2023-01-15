@@ -81,7 +81,7 @@ See [docs](https://docs.easyscript.dev) on how to use this package's functions a
 
 - [Chalk](https://www.mongodb.com/) - Terminal string styling done right
 - [Typescript](https://www.typescriptlang.org) - Programming Language
-- [NodeJS](https://nodejs.org/en/) - Server Environment
+- [Node.js](https://nodejs.org) - Server Environment
 
 <br />
 
