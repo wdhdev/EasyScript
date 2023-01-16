@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install husky globally
+          name: Install Husky (Global)
           command: sudo npm i -g husky
       - run:
           name: Generate package-lock.json
@@ -18,10 +18,10 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
-          name: Intall TypeScript globally
+          name: Intall TypeScript (Global)
           command: sudo npm i -g typescript
       - run:
-          name: Compile easyscriptjs
+          name: Compile TypeScript
           command: tsc
 
 workflows:
