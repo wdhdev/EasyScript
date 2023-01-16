@@ -4,7 +4,6 @@
 **/*.tgz
 
 # Folders
-src/
 node_modules/
 
 .vscode
