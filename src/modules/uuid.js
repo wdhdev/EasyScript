@@ -1,6 +1,6 @@
 /**
- * @function `uuid` - Randomly generate a unique UUID composed of random characters and numbers 
- * @returns {String} A unique UUID string that follows this rule: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
+ * @function `uuid` - Randomly generate a unique UUID composed of random characters and numbers
+ * @returns { String } - A unique UUID string that follows this rule: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
  */
 
 function uuid() {
@@ -16,7 +16,7 @@ function uuid() {
 
             return (c === "x" ? r : (r & 0x3) | 0x8).toString(16);
         }
-    )
+    );
 }
 
 module.exports = uuid;

@@ -1,7 +1,6 @@
 /**
- * 
- * @function `flip` - Quickly execute a heads or tails decision randomly 
- * @returns {string} Returns "heads" or "tails" (*as string*)
+ * @function `flip` - Quickly execute a heads or tails decision randomly
+ * @returns { String } - Returns "heads" or "tails" (*as a string*)
  */
 
 function flip() {

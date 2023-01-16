@@ -5,11 +5,11 @@ function MethodException(message) {
 
 /**
  * @function removeDuplicates - Return an array that has no duplicate values
- * @param {Array<>} arr - An array of entries to be cleaned
- * @param {Boolean} [multi_dim=true] - Turn multi-dimensional arrays to one-dimensional before removing duplicates - Default: True (Optional)
- * @param {Boolean} [truthy_only=true] - Remove falsy values (empty string " ", undefined, null, false, true, empty arrays [], empty objects {}, functions) - Default: True (Optional)
- * @param {('none'|['alphabetic'|'numeric'|'lengthwise'])} [sort_by] - Sort the returned array by one or a combination of options - If multiple options exist will sort method by method - Default: 'none' (Optional)
- * @returns {Array} New array that has no duplicate values
+ * @param { Array<> } arr - An array of entries to be cleaned
+ * @param { Boolean } [multi_dim=true] - Turn multi-dimensional arrays to one-dimensional before removing duplicates - Default: True (Optional)
+ * @param { Boolean } [truthy_only=true] - Remove falsy values (empty string " ", undefined, null, false, true, empty arrays [], empty objects {}, functions) - Default: True (Optional)
+ * @param { ( 'none' | ['alphabetic' | 'numeric' | 'lengthwise'] ) } [sort_by] - Sort the returned array by one or a combination of options - If multiple options exist will sort method by method - Default: 'none' (Optional)
+ * @returns { Array } New array that has no duplicate values
  */
 
 const removeDuplicates = (
@@ -122,7 +122,7 @@ const removeDuplicates = (
             } else if (e === "lengthwise") {
                 newArray.sort((a, b) =>
                     (typeof a === "string" && typeof b == "string") ||
-                        (Array.isArray(a) && Array.isArray(b))
+                    (Array.isArray(a) && Array.isArray(b))
                         ? a.length - b.length
                         : -1
                 );
