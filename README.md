@@ -1,10 +1,6 @@
 <p align="center">
-  <img src="https://images.easyscript.dev/cover.png">
+  <img src="https://images.easyscript.dev/banner.png">
 </p>
-
-<h1 align="center">Easy Script</h1>
-
-<h3 align="center"><code>npm install easyscriptjs</code></p></h3>
 
 <p align="center">
   <img alt="Lastest Release" src="https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge">
@@ -12,6 +8,7 @@
   <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr-raw/easyscriptjs/easyscript?label=Pull%20Requests&style=for-the-badge">
 </p>
 
+<h1 align="center">Easy Script</h1>
 <p align="center">Easy Script is a npm package which makes coding in JavaScript easy!</p>
 
 <h2 align="center">Documentation</h2>
