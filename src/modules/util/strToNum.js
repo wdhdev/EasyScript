@@ -1,3 +1,9 @@
+/**
+ * @function `strToNum` - Convert a string to a number.
+ * @param { String } number - *Required* The string to be converted.
+ * @returns { Number } - The output of the conversion.
+ */
+
 function strToNum(string) {
     if (!string || typeof string !== "string")
         throw new Error("No string provided");

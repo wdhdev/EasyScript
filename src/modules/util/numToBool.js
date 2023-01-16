@@ -1,3 +1,9 @@
+/**
+ * @function `numToBool` - Convert a number to a boolean.
+ * @param { Number } number - *Required* The number to be converted.
+ * @returns { Boolean } - The output of the conversion.
+ */
+
 function numToBool(number) {
     if (typeof number !== "number") throw new Error("No number provided");
     if (number !== 1 && number !== 0)
