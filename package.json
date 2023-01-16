@@ -1,9 +1,15 @@
 {
   "name": "easyscriptjs",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Easy Script is a npm package which makes coding in JavaScript easy!",
-  "main": "src/index.js",
-  "scripts": {},
+  "main": "lib/index.js",
+	"typings": "typings/index.d.ts",
+  "scripts": {
+		"test": "node test",
+		"build": "tsc",
+		"git": "sh ./gitpush.sh",
+		"dev": "npm publish --tag dev"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EasyScriptJS/EasyScript.git"
@@ -32,6 +38,10 @@
   },
   "homepage": "https://easyscript.dev",
   "dependencies": {
-    "nanoid": "3.3.4"
-  }
+		"chalk": "^4.1.2",
+		"typescript": "^4.9.4"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.12"
+	}
 }
