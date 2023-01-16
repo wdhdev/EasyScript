@@ -6,7 +6,7 @@
 # Folders
 node_modules/
 src/
-.github
+.github/
 
 # Files
 /tsconfig.json
