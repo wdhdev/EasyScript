@@ -15,11 +15,21 @@
 		"url": "git+https://github.com/EasyScriptJS/EasyScript.git"
 	},
 	"keywords": [
-		"easy",
-		"easyscript",
-		"type-converter",
-		"types",
-		"uuid"
+		"backend",
+    		"beginners",
+        	"converter",
+        	"easy",
+        	"easy-to-use",
+        	"easyscript",
+        	"frontend",
+        	"id",
+        	"python",
+        	"random",
+        	"type-converter",
+        	"types",
+        	"util",
+        	"utility",
+        	"uuid"
 	],
 	"author": "Easy Script <packages@easyscript.dev>",
 	"bugs": {
