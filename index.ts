@@ -1,25 +1,16 @@
-/**
- * Modules 
-**/
+// Modules
 
 export { print } from './src/print';
 export { flip } from './src/flip';
 export { log } from './src/log';
 export { uuid } from './src/uuid';
 
-/**
- * Modules - Util 
-**/
+// Util Modules
 
+export { boolToNum } from './src/util/boolToNum'
+export { boolToStr } from './src/util/boolToStr';
+export { numToBool } from './src/util/numToBool';
+export { numToStr } from './src/util/numToStr';
+export { strToBool } from './src/util/strToBool';
+export { strToNum } from './src/util/strToNum';
 export { removeDuplicates } from './src/util/removeDuplicates';
-
-/**
- * Modules - Types
-**/
-
-export { boolToNum } from './src/types/boolToNum'
-export { boolToStr } from './src/types/boolToStr';
-export { numToBool } from './src/types/numToBool';
-export { numToStr } from './src/types/numToStr';
-export { strToBool } from './src/types/strToBool';
-export { strToNum } from './src/types/strToNum';
