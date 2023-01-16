@@ -1,0 +1,6 @@
+readme:
+- "README.md"
+
+modules:
+- src/modules/**/*
+- "src/modules.js"
