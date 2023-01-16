@@ -7,7 +7,7 @@ on:
 jobs:
   do-not-merge:
     if: ${{ contains(github.event.*.labels.*.name, 'do not merge') }}
-    name: Do Not Merge
+    name: Check
     runs-on: ubuntu-latest
     steps:
       - run: |
