@@ -4,10 +4,10 @@ function MethodException(message) {
 }
 
 /**
- * @function removeDuplicates - Return an array that has no duplicate values
- * @param { Array<> } arr - An array of entries to be cleaned
- * @param { Boolean } [multi_dim=true] - Turn multi-dimensional arrays to one-dimensional before removing duplicates - Default: True (Optional)
- * @param { Boolean } [truthy_only=true] - Remove falsy values (empty string " ", undefined, null, false, true, empty arrays [], empty objects {}, functions) - Default: True (Optional)
+ * @function removeDuplicates - Return an array that has no duplicate values.
+ * @param { Array<> } arr - An array of entries to be cleaned.
+ * @param { Boolean } [multi_dim=true] - Turn multi-dimensional arrays to one-dimensional before removing duplicates - Default: true (Optional)
+ * @param { Boolean } [truthy_only=true] - Remove falsy values (empty string " ", undefined, null, false, true, empty arrays [], empty objects {}, functions) - Default: true (Optional)
  * @param { ( 'none' | ['alphabetic' | 'numeric' | 'lengthwise'] ) } [sort_by] - Sort the returned array by one or a combination of options - If multiple options exist will sort method by method - Default: 'none' (Optional)
  * @returns { Array } New array that has no duplicate values
  */

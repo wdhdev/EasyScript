@@ -1,5 +1,5 @@
 /**
- * @function `uuid` - Randomly generate a unique UUID composed of random characters and numbers
+ * @function `uuid` - Generate a unique UUID composed of random characters and numbers.
  * @returns { String } - A unique UUID string that follows this rule: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
  */
 

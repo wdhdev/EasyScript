@@ -1,3 +1,9 @@
+/**
+ * @function `boolToNum` - Convert a boolean to a number.
+ * @param { Boolean } boolean - *Required* The boolean to be converted.
+ * @returns { Number } - The output of the conversion.
+ */
+
 function boolToNum(boolean) {
     if (typeof boolean !== "boolean") throw new Error("No boolean provided");
 
