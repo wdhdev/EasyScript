@@ -7,6 +7,7 @@ export { random } from "./src/random";
 export { uuid } from "./src/uuid";
 
 /** Util **/
+
 export { boolToNum } from "./src/types/boolToNum";
 export { boolToStr } from "./src/types/boolToStr";
 export { numToBool } from "./src/types/numToBool";
