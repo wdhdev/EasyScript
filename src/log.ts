@@ -5,7 +5,7 @@
  */
 
 export function log(input: any): void {
-	if (!input) throw new Error('No input specified');
+	if (!input) throw new Error("No input specified");
 
 	console.log(input);
 }

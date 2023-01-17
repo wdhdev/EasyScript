@@ -1,9 +1,9 @@
-import { ObjectType } from 'typescript';
+import { ObjectType } from "typescript";
 
 class MethodException extends Error {
 	constructor(message: string) {
 		super(message);
-		this.name = 'Method Error';
+		this.name = "Method Error";
 	}
 }
 
@@ -11,7 +11,7 @@ export const removeDuplicates = (
 	arr: any[],
 	multi_dim: boolean = true,
 	truthy_only: boolean = true,
-	sort_by: 'none' | 'alphabetic' | 'numeric' | 'lengthwise' = 'none'
+	sort_by: "none" | "alphabetic" | "numeric" | "lengthwise" = "none"
 ): any[] => {
 	// Flatten multi-dimensional arrays
 	if (!Array.isArray(arr))
@@ -25,7 +25,7 @@ export const removeDuplicates = (
 		while (newArray.filter((e) => Array.isArray(e)).length > 0) {
 			newArray = newArray.flat();
 		}
-	} else if (typeof multi_dim !== 'boolean')
+	} else if (typeof multi_dim !== "boolean")
 		throw new MethodException(
 			`Illegal use of parameter multi_dim - Expected true or false - Found: ${multi_dim}`
 		);
@@ -33,8 +33,8 @@ export const removeDuplicates = (
 	// Filter falsy values
 	if (truthy_only === true) {
 		newArray = newArray.filter((e) => {
-			if (typeof e === 'string') {
-				if (e.trim() === '') /** empty strings */ return false;
+			if (typeof e === "string") {
+				if (e.trim() === "") /** empty strings */ return false;
 				return true; // Not empty strings
 			} else if (Array.isArray(e)) {
 				if (e.length > 0) return true; // Check if empty
@@ -42,23 +42,23 @@ export const removeDuplicates = (
 			} else if (!e && e !== 0) {
 				// false, null or undefined NOT 0 (number) ref#1
 				return false;
-			} else if (typeof e === 'boolean') {
+			} else if (typeof e === "boolean") {
 				// Boolean: true or false
 				return false;
-			} else if (typeof e === 'object') {
+			} else if (typeof e === "object") {
 				// Object or null (can't be null because ref#1 was checked)
 				if (Object.keys(e).length > 0) return true; // Object not empty
 				return false; // Empty object
-			} else if (typeof e === 'function') {
+			} else if (typeof e === "function") {
 				// Is function
 				return false;
-			} else if (typeof e === 'number') {
+			} else if (typeof e === "number") {
 				return true;
 			} else {
 				return false; // Default
 			}
 		});
-	} else if (typeof truthy_only !== 'boolean')
+	} else if (typeof truthy_only !== "boolean")
 		throw new MethodException(
 			`Illegal use of parameter truthy_only  - Expected true or false - Found: ${truthy_only}`
 		);
@@ -67,7 +67,7 @@ export const removeDuplicates = (
 	if (Array.isArray(sort_by)) {
 		// Check if unacceptable values exist
 		const params_unknown = sort_by.filter(
-			(e) => e !== 'alphabetic' && e !== 'lengthwise' && e !== 'numeric'
+			(e) => e !== "alphabetic" && e !== "lengthwise" && e !== "numeric"
 		);
 
 		if (params_unknown.length > 0)
@@ -107,24 +107,24 @@ export const removeDuplicates = (
 
 		// Sorting
 		sort_by.forEach((e) => {
-			if (e === 'alphabetic') {
+			if (e === "alphabetic") {
 				newArray.sort((a, b) =>
-					typeof a === 'string' && typeof b === 'string'
+					typeof a === "string" && typeof b === "string"
 						? a.localeCompare(b)
 						: -1
 				);
-			} else if (e === 'numeric') {
+			} else if (e === "numeric") {
 				newArray.sort((a, b) => a - b);
-			} else if (e === 'lengthwise') {
+			} else if (e === "lengthwise") {
 				newArray.sort((a, b) =>
-					(typeof a === 'string' && typeof b == 'string') ||
+					(typeof a === "string" && typeof b == "string") ||
 					(Array.isArray(a) && Array.isArray(b))
 						? a.length - b.length
 						: -1
 				);
 			}
 		});
-	} else if (sort_by === 'none') {
+	} else if (sort_by === "none") {
 	} // Okay
 	else
 		throw new MethodException(
@@ -133,5 +133,3 @@ export const removeDuplicates = (
 
 	return Array.from(new Set(newArray));
 };
-
-

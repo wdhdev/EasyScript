@@ -5,5 +5,5 @@
  */
 
 export function flip(): string {
-	return Math.random() >= 0.5 ? 'heads' : 'tails';
+	return Math.random() >= 0.5 ? "heads" : "tails";
 }
