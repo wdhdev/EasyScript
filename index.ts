@@ -15,6 +15,6 @@ export { numToStr } from "./src/types/numToStr";
 export { strToBool } from "./src/types/strToBool";
 export { strToNum } from "./src/types/strToNum";
 
-/** Others **/
+/** Util **/
 
 export { removeDuplicates } from "./src/util/removeDuplicates";
