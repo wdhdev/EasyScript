@@ -3,4 +3,3 @@ readme:
 
 modules:
 - src/modules/**/*
-- "src/modules.js"

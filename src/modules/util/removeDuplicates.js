@@ -122,7 +122,7 @@ const removeDuplicates = (
             } else if (e === "lengthwise") {
                 newArray.sort((a, b) =>
                     (typeof a === "string" && typeof b == "string") ||
-                    (Array.isArray(a) && Array.isArray(b))
+                        (Array.isArray(a) && Array.isArray(b))
                         ? a.length - b.length
                         : -1
                 );
