@@ -15,4 +15,4 @@ const modules = {
     uuid: require("./modules/uuid")
 }
 
-module.exports = { modules };
+module.exports = modules;
