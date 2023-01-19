@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://images.easyscript.dev/banner.png" />
+    <img src="https://images.easyscript.dev/banner.png">
 </p>
 
 <p align="center">
