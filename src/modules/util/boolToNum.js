@@ -5,7 +5,7 @@
  */
 
 function boolToNum(boolean) {
-    if (typeof boolean !== "boolean") throw new Error("No boolean provided");
+    if (typeof boolean !== "boolean") throw new TypeError("No boolean provided");
 
     let res;
 

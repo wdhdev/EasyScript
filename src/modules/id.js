@@ -7,8 +7,8 @@ const { customAlphabet } = require("nanoid");
  */
 
 function id(length) {
-    if (!length) throw new Error("No length specified");
-    if (typeof length !== "number") throw new Error("Invalid type specified");
+    if (!length) throw new SyntaxError("No length specified");
+    if (typeof length !== "number") throw new TypeError("Invalid type specified");
 
     const nanoid = customAlphabet(
         "1234567890abcdefghijklmnopqrstuvwxyz",

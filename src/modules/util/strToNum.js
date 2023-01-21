@@ -5,10 +5,8 @@
  */
 
 function strToNum(string) {
-    if (!string || typeof string !== "string")
-        throw new Error("No string provided");
-
-    if (!isFinite(string)) throw new Error("No valid string provided");
+    if (!string || typeof string !== "string") throw new TypeError("No string provided");
+    if (!isFinite(string)) throw new SyntaxError("No valid string provided");
 
     return Number(string);
 }

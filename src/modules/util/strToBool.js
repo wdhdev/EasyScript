@@ -5,11 +5,8 @@
  */
 
 function strToBool(string) {
-    if (!string || typeof string !== "string")
-        throw new Error("No string provided");
-
-    if (string !== "true" && string !== "false" && string !== "1" && string !== "0")
-        throw new Error("No valid string provided");
+    if (!string || typeof string !== "string") throw new TypeError("No string provided");
+    if (string !== "true" && string !== "false" && string !== "1" && string !== "0") throw new SyntaxError("No valid string provided");
 
     let res;
 
