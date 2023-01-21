@@ -5,7 +5,7 @@
  */
 
 function print(input) {
-    if (!input) throw new Error("No input specified");
+    if (!input) throw new SyntaxError("No input specified");
 
     return console.log(input);
 }
