@@ -1,6 +1,6 @@
 /**
  * @function `uuid` - Generate a unique UUID composed of random characters and numbers. UUIDs follow this rule: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
- * @param { Number } [number] - The amount of UUID's to generate. Condition: **`1 < amount < 64`**
+ * @param { Number } [number] - The amount of UUIDs to generate. Condition: **`1 < amount < 64`**
  * @returns { Array } - Returns an array if the amount inputted is above 1.
  * @returns { String } - Returns a string if the amount inputted is equal to 1.
  */
