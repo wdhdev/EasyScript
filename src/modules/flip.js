@@ -3,8 +3,6 @@
  * @returns { Number } - Returns 1 for heads or 0 for tails
  */
 
-function flip() {
+module.exports = function flip() {
     return Math.random() >= 0.5 ? 1 : 0;
 }
-
-module.exports = flip;

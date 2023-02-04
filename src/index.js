@@ -1,7 +1,7 @@
-const modules = {
+module.exports = {
     dns: {
         a: require("./modules/dns/a"),
-        cname: require("./modules/dns/cname"),
+        cname: require("./modules/dns/cname")
     },
     flip: require("./modules/flip"),
     id: require("./modules/id"),
@@ -19,5 +19,3 @@ const modules = {
     },
     uuid: require("./modules/uuid")
 }
-
-module.exports = modules;
