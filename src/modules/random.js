@@ -4,7 +4,7 @@
  * @returns { Number } - A random number between 1 and max (*parameter*). If max is *undefined*, will return a random number between 1 and 100.
  */
 
-function random(max) {
+module.exports = function random(max) {
     let highest = 100;
 
     if (max && !isFinite(max)) throw new TypeError("Max number must be a number");
@@ -16,5 +16,3 @@ function random(max) {
 
     return result;
 }
-
-module.exports = random;

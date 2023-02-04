@@ -1,33 +1,13 @@
-const { customAlphabet } = require("nanoid");
-
 /**
  * @function `id` - Generate a unique ID composed of random characters and numbers.
  * @param { Number } [length] - The length of each ID.
  * @param { Number } [amount] - The amount of IDs to generate. Condition: **`1 < amount < 64`**
- * @returns { Array } - Returns an array if the amount inputted is above 1.
- * @returns { String } - Returns a string if the amount inputted is equal to 1.
+ * @returns { string | string[] } - Returns an array if the amount inputted is above 1, else returns a string.
  */
 
-function generateId(length, amount) {
-    let ids = [];
+const { customAlphabet } = require("nanoid");
 
-    let i = 0;
-
-    do {
-        const nanoid = customAlphabet("1234567890abcdefghijklmnopqrstuvwxyz", length );
-        const id = nanoid();
-
-        ids.push(id);
-
-        i++;
-    } while (i < amount);
-
-    if (ids.length === 1) ids = ids[0];
-
-    return ids;
-}
-
-function id(length, amount) {
+module.exports = function id(length, amount) {
     if (!length) throw new SyntaxError("No length specified");
     if (typeof length !== "number") throw new TypeError("Length must be Number type");
 
@@ -38,7 +18,20 @@ function id(length, amount) {
 
     if (amount) ids = amount;
 
-    return generateId(length, amount);
-}
+    let generatedIds = [];
 
-module.exports = id;
+    let i = 0;
+
+    do {
+        const nanoid = customAlphabet("1234567890abcdefghijklmnopqrstuvwxyz", length );
+        const id = nanoid();
+
+        generatedIds.push(id);
+
+        i++;
+    } while (i < amount);
+
+    if (generatedIds.length === 1) return generatedIds[0];
+
+    return generatedIds;
+}
