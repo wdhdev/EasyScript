@@ -4,7 +4,7 @@
  * @returns { String } - The output of the conversion.
  */
 
-export function numToStr(number) {
+module.exports = function numToStr(number) {
     if (typeof number !== "number") throw new TypeError("No number provided");
 
     return number.toString();
