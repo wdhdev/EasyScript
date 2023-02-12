@@ -17,19 +17,7 @@ module.exports = function uuid(number) {
     let i = 0;
 
     do {
-        var d = new Date().getTime();
-
-        let uuid = "xxxxxxxx-xxxx-4xxx-xxxx-xxxxxxxxxxxx".replace(
-            /[x]/g,
-            function (c) {
-                var r = Math.random() * 16;
-
-                r = (d + r) % 16 | 0;
-                d = Math.floor(d / 16);
-
-                return (c === "x" ? r : (r & 0x3) | 0x8).toString(16);
-            }
-        );
+        const uuid = require("crypto").randomUUID();
 
         uuids.push(uuid);
 
