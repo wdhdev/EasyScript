@@ -1,5 +1,5 @@
 /**
- * @function `uuid` - Generate a unique UUID composed of random characters and numbers. UUIDs follow this rule: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
+ * @function `uuid` - Generate a unique UUID using the RFC 4122 version 4 UUID standard.
  * @param { Number } [number] - The amount of UUIDs to generate. Condition: **`1 < amount < 64`**
  * @returns { string | string[] } - Returns an array if the amount inputted is above 1, else returns a string.
  */
@@ -19,8 +19,8 @@ module.exports = function uuid(number) {
     do {
         var d = new Date().getTime();
 
-        let uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
-            /[xy]/g,
+        let uuid = "xxxxxxxx-xxxx-4xxx-xxxx-xxxxxxxxxxxx".replace(
+            /[x]/g,
             function (c) {
                 var r = Math.random() * 16;
 
