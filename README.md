@@ -1,9 +1,9 @@
 # ✨ Easy Script
 Easy Script is a npm package which makes coding in JavaScript easy!
 
-[![Latest Release](https://img.shields.io/github/v/release/wdhdev/easyscript?style=for-the-badge)](https://github.com/wdhdev/EasyScript/releases/latest)
-[![GitHub Issues](https://img.shields.io/github/issues-raw/wdhdev/easyscript?label=Issues&style=for-the-badge)](https://github.com/wdhdev/EasyScript/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/wdhdev/easyscript?label=Pull%20Requests&style=for-the-badge)](https://github.com/wdhdev/EasyScript/pulls)
+[![Latest Release](https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge)](https://github.com/EasyScriptJS/EasyScript/releases/latest)
+[![GitHub Issues](https://img.shields.io/github/issues-raw/easyscriptjs/easyscript?label=Issues&style=for-the-badge)](https://github.com/EasyScriptJS/EasyScript/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/easyscriptjs/easyscript?label=Pull%20Requests&style=for-the-badge)](https://github.com/EasyScriptJS/EasyScript/pulls)
 
 ## 📊 Installation
 You can use any of the commands below to install Easy Script.
