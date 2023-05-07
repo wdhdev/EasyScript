@@ -1,16 +1,11 @@
-<p align="center">
-    <img src="https://images.easyscript.dev/banner.png">
-</p>
+![Banner](https://images.easyscript.dev/banner.png)
 
-<h1 align="center">✨ Easy Script</h1>
+# ✨ Easy Script
+Easy Script is a npm package which makes coding in JavaScript easy!
 
-<p align="center">
-    <img alt="Lastest Release" src="https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge">
-    <img alt="GitHub Issues" src="https://img.shields.io/github/issues-raw/easyscriptjs/easyscript?label=Issues&style=for-the-badge">
-    <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr-raw/easyscriptjs/easyscript?label=Pull%20Requests&style=for-the-badge">
-</p>
-
-<p align="center">Easy Script is a npm package which makes coding in JavaScript easy!</p>
+![Latest Release](https://img.shields.io/github/v/release/wdhdev/easyscript?style=for-the-badge)
+![GitHub Issues](https://img.shields.io/github/issues-raw/wdhdev/easyscript?label=Issues&style=for-the-badge)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/wdhdev/easyscript?label=Pull%20Requests&style=for-the-badge)
 
 ## 📊 Installation
 
@@ -36,4 +31,4 @@ For more information on how to use Easy Script, the [documentation](https://docs
 
 ## ❓ Support
 
-If you need any help, feel free to [open an issue](https://github.com/EasyScriptJS/EasyScript/issues/new/choose).
+If you need any help, feel free to [open an issue](https://github.com/wdhdev/EasyScript/issues/new/choose).
