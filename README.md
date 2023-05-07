@@ -26,4 +26,4 @@ For more information on how to use Easy Script, the [documentation](https://docs
 - Simple & understandable documentation
 
 ## ❓ Support
-If you need any help, feel free to [open an issue](https://github.com/wdhdev/EasyScript/issues/new/choose).
+If you need any help, feel free to [open an issue](https://github.com/EasyScriptJS/EasyScript/issues/new/choose).

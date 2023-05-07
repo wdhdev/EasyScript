@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wdhdev/EasyScript.git"
+    "url": "git+https://github.com/EasyScriptJS/EasyScript.git"
   },
   "keywords": [
     "backend",
@@ -28,7 +28,7 @@
   "author": "Easy Script <admin@easyscript.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wdhdev/EasyScript/issues"
+    "url": "https://github.com/EasyScriptJS/EasyScript/issues"
   },
   "homepage": "https://easyscript.dev",
   "dependencies": {
