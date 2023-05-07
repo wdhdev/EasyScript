@@ -1,20 +1,12 @@
-<p align="center">
-    <img src="https://images.easyscript.dev/banner.png">
-</p>
+# ✨ Easy Script
+Easy Script is a npm package which makes coding in JavaScript easy!
 
-<h1 align="center">✨ Easy Script</h1>
-
-<p align="center">
-    <img alt="Lastest Release" src="https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge">
-    <img alt="GitHub Issues" src="https://img.shields.io/github/issues-raw/easyscriptjs/easyscript?label=Issues&style=for-the-badge">
-    <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr-raw/easyscriptjs/easyscript?label=Pull%20Requests&style=for-the-badge">
-</p>
-
-<p align="center">Easy Script is a npm package which makes coding in JavaScript easy!</p>
+[![Latest Release](https://img.shields.io/github/v/release/easyscriptjs/easyscript?style=for-the-badge)](https://github.com/EasyScriptJS/EasyScript/releases/latest)
+[![GitHub Issues](https://img.shields.io/github/issues-raw/easyscriptjs/easyscript?label=Issues&style=for-the-badge)](https://github.com/EasyScriptJS/EasyScript/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/easyscriptjs/easyscript?label=Pull%20Requests&style=for-the-badge)](https://github.com/EasyScriptJS/EasyScript/pulls)
 
 ## 📊 Installation
-
-You can you use one of the methods below to install Easy Script.
+You can use any of the commands below to install Easy Script.
 
 ```
 npm install easyscriptjs
@@ -24,10 +16,9 @@ npm install easyscriptjs
 yarn add easyscriptjs
 ```
 
-For more information on how to use Easy Script, the [documentation](https://docs.easyscript.dev) should help you.
+For more information on how to use Easy Script, the [documentation](https://docs.easyscript.dev) should be able to help you.
 
 ## 🤔 Why?
-
 - Beginner friendly
 - Easy to use
 - Open source project
@@ -35,5 +26,4 @@ For more information on how to use Easy Script, the [documentation](https://docs
 - Simple & understandable documentation
 
 ## ❓ Support
-
 If you need any help, feel free to [open an issue](https://github.com/EasyScriptJS/EasyScript/issues/new/choose).

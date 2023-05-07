@@ -1,6 +1,6 @@
 {
   "name": "easyscriptjs",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Easy Script is a npm package which makes coding in JavaScript easy!",
   "main": "src/index.js",
   "scripts": {},
@@ -25,13 +25,13 @@
     "utility",
     "uuid"
   ],
-  "author": "Easy Script <packages@easyscript.dev>",
+  "author": "Easy Script <admin@easyscript.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EasyScriptJS/EasyScript/issues"
   },
   "homepage": "https://easyscript.dev",
   "dependencies": {
-    "nanoid": "3.3.4"
+    "nanoid": "^3.3.6"
   }
 }

@@ -1,8 +1,4 @@
 module.exports = {
-    dns: {
-        a: require("./modules/dns/a"),
-        cname: require("./modules/dns/cname")
-    },
     flip: require("./modules/flip"),
     id: require("./modules/id"),
     log: require("./modules/log"),
