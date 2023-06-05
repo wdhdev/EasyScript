@@ -16,7 +16,7 @@ npm install easyscriptjs
 yarn add easyscriptjs
 ```
 
-For more information on how to use Easy Script, the [documentation](https://docs.easyscript.dev) should be able to help you.
+For more information on how to use Easy Script, the [documentation](https://easyscript.dev) should be able to help you.
 
 ## 🤔 Why?
 - Beginner friendly
