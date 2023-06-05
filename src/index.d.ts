@@ -16,7 +16,7 @@ export const util: {
     arr: any[],
     multi_dim?: boolean,
     truthy_only?: boolean,
-    sort_by?: "alphabetic" | "numeric" | "lengthwise"
+    sort_by?: "alphabetic" | "numeric" | "lengthwise" | "none"
   ): any[];
   strToBool(string: string): boolean;
   strToNum(string: string): number;
