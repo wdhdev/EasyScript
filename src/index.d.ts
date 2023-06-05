@@ -8,16 +8,16 @@ export function uuid(amount?: 1): string;
 export function uuid(amount?: number): string[];
 
 export const util: {
-  boolToNum(boolean: boolean): 0 | 1;
-  boolToStr(boolean: boolean): "true" | "false";
-  numToBool(number: 0 | 1): boolean;
-  numToStr<N extends number>(number: N): `${N}`;
-  removeDuplicates(
-    arr: any[],
-    multi_dim?: boolean,
-    truthy_only?: boolean,
-    sort_by?: "alphabetic" | "numeric" | "lengthwise" | "none"
-  ): any[];
-  strToBool(string: string): boolean;
-  strToNum(string: string): number;
+    boolToNum(boolean: boolean): 0 | 1;
+    boolToStr(boolean: boolean): "true" | "false";
+    numToBool(number: 0 | 1): boolean;
+    numToStr<N extends number>(number: N): `${N}`;
+    removeDuplicates(
+    	arr: any[],
+    	multi_dim?: boolean,
+        truthy_only?: boolean,
+        sort_by?: "alphabetic" | "numeric" | "lengthwise" | "none"
+    ): any[];
+    strToBool(string: string): boolean;
+    strToNum(string: string): number;
 };
