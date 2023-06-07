@@ -3,6 +3,7 @@
   "version": "1.3.0",
   "description": "Easy Script is a npm package which makes coding in JavaScript easy!",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {},
   "repository": {
     "type": "git",
