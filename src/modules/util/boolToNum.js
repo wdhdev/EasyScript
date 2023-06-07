@@ -7,9 +7,5 @@
 module.exports = function boolToNum(boolean) {
     if (typeof boolean !== "boolean") throw new TypeError("No boolean provided");
 
-    let res = 1;
-
-    if (!boolean) res = +false;
-
-    return res;
+    return boolean === true ? 1 : 0;
 }
