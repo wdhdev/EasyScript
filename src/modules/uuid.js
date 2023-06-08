@@ -5,26 +5,26 @@
  */
 
 module.exports = function uuid(number) {
-    let amount = 1;
+  let amount = 1;
 
-    if (number && !isFinite(number)) throw new TypeError("Max number must be a number");
-    if ((number && number < 1) || (number && number >= 64)) throw new RangeError("Amount must be equal or higher than 1 and lower than 64");
+  if (number && !isFinite(number))
+    throw new TypeError('Max number must be a number');
+  if ((number && number < 1) || (number && number >= 64))
+    throw new RangeError(
+      'Amount must be equal or higher than 1 and lower than 64'
+    );
 
-    if (number) amount = number;
+  if (number) amount = number;
 
-    let uuids = [];
+  let uuids = [];
 
-    let i = 0;
+  for (var i = 0; i < amount; i++) {
+    const uuid = require('crypto').randomUUID();
 
-    do {
-        const uuid = require("crypto").randomUUID();
+    uuids.push(uuid);
+  }
 
-        uuids.push(uuid);
+  if (uuids.length === 1) return uuids[0];
 
-        i++;
-    } while (i < amount);
-
-    if (uuids.length === 1) return uuids[0];
-
-    return uuids;
+  return uuids;
 }
