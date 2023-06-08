@@ -8,9 +8,5 @@ module.exports = function strToBool(string) {
     if (!string || typeof string !== "string") throw new TypeError("No string provided");
     if (string !== "true" && string !== "false" && string !== "1" && string !== "0") throw new SyntaxError("No valid string provided");
 
-    let res = true;
-
-    if (string === "false" || string === "0") res = false;
-
-    return res;
+    return string === "false" || string === "0" ? false : true;
 }
