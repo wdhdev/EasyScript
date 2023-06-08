@@ -8,7 +8,7 @@
 module.exports = function random(min, max) {
     if (max && !isFinite(max) || min && !isFinite(min)) throw new TypeError("Parameter number must be a number");
     if (min >= max) throw new RangeError("Parameter min must be less than max");
-    else if (min <= 0 && min >= max) throw new RangeError("Parameter max must be greater than min");
+    if (min <= 0 && min >= max) throw new RangeError("Parameter max must be greater than min");
 
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
