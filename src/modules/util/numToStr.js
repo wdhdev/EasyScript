@@ -8,4 +8,4 @@ module.exports = function numToStr(number) {
     if (typeof number !== "number") throw new TypeError("No number provided");
 
     return number.toString();
-}
+};

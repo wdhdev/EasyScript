@@ -14,17 +14,13 @@ module.exports = function uuid(number) {
 
     let uuids = [];
 
-    let i = 0;
-
-    do {
+    for (var i = 0; i < amount; i++) {
         const uuid = require("crypto").randomUUID();
 
         uuids.push(uuid);
-
-        i++;
-    } while (i < amount);
+    }
 
     if (uuids.length === 1) return uuids[0];
 
     return uuids;
-}
+};

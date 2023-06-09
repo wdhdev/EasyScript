@@ -9,4 +9,4 @@ module.exports = function numToBool(number) {
     if (number !== 1 && number !== 0) throw new SyntaxError("Number must be either 0 or 1");
 
     return number === 1;
-}
+};

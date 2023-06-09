@@ -23,7 +23,7 @@ module.exports = function id(length, amount) {
     let i = 0;
 
     do {
-        const nanoid = customAlphabet("1234567890abcdefghijklmnopqrstuvwxyz", length );
+        const nanoid = customAlphabet("1234567890abcdefghijklmnopqrstuvwxyz", length);
         const id = nanoid();
 
         generatedIds.push(id);
@@ -34,4 +34,4 @@ module.exports = function id(length, amount) {
     if (generatedIds.length === 1) return generatedIds[0];
 
     return generatedIds;
-}
+};

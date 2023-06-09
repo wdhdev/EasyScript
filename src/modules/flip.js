@@ -5,4 +5,4 @@
 
 module.exports = function flip() {
     return Math.random() >= 0.5 ? 1 : 0;
-}
+};

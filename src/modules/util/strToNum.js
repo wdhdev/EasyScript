@@ -9,4 +9,4 @@ module.exports = function strToNum(string) {
     if (!isFinite(string)) throw new SyntaxError("No valid string provided");
 
     return Number(string);
-}
+};
