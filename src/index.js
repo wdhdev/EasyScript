@@ -1,7 +1,6 @@
 module.exports = {
     flip: require("./modules/flip"),
     id: require("./modules/id"),
-    log: require("./modules/log"),
     print: require("./modules/print"),
     random: require("./modules/random"),
     util: {
