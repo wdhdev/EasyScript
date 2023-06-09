@@ -8,4 +8,4 @@ module.exports = function boolToNum(boolean) {
     if (typeof boolean !== "boolean") throw new TypeError("No boolean provided");
 
     return boolean === true ? 1 : 0;
-}
+};

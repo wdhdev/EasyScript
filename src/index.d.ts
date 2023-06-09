@@ -11,14 +11,7 @@ export declare const util: {
     boolToStr<B extends boolean>(boolean: B): B extends true ? "true" : false;
     numToBool<N extends 0 | 1>(number: N): N extends 1 ? true : false;
     numToStr<N extends number>(number: N): `${N}`;
-    removeDuplicates(
-        arr: any[],
-        multi_dim?: boolean,
-        truthy_only?: boolean,
-        sort_by?: "alphabetic" | "numeric" | "lengthwise" | "none"
-    ): any[];
-    strToBool<S extends "true" | "false">(
-        string: S
-    ): S extends "true" ? true : false;
+    removeDuplicates(arr: any[], multi_dim?: boolean, truthy_only?: boolean, sort_by?: "alphabetic" | "numeric" | "lengthwise" | "none"): any[];
+    strToBool<S extends "true" | "false">(string: S): S extends "true" ? true : false;
     strToNum(string: string): number;
 };

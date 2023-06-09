@@ -9,4 +9,4 @@ module.exports = function strToBool(string) {
     if (string !== "true" && string !== "false" && string !== "1" && string !== "0") throw new SyntaxError("No valid string provided");
 
     return string === "false" || string === "0" ? false : true;
-}
+};

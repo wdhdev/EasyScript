@@ -10,7 +10,7 @@ module.exports = {
         numToStr: require("./modules/util/numToStr"),
         removeDuplicates: require("./modules/util/removeDuplicates"),
         strToBool: require("./modules/util/strToBool"),
-        strToNum: require("./modules/util/strToNum")
+        strToNum: require("./modules/util/strToNum"),
     },
-    uuid: require("./modules/uuid")
-}
+    uuid: require("./modules/uuid"),
+};

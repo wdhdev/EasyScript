@@ -23,4 +23,4 @@ module.exports = function uuid(number) {
     if (uuids.length === 1) return uuids[0];
 
     return uuids;
-}
+};
