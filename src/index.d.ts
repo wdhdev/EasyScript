@@ -2,7 +2,7 @@ export function flip(): 0 | 1;
 export function id(length: number, amount?: 1): string;
 export function id(length: number, amount?: number): string[];
 export function print(...input: any[]): void;
-export function random(max?: number): number;
+export function random(min?: number, max?: number): number;
 export function uuid(amount?: 1): string;
 export function uuid(amount?: number): string[];
 
