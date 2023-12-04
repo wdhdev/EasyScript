@@ -1,3 +1,8 @@
+# Deprecated
+Easy Script has been deprecated due to a lack of updates and features. It has been succeeded by [william.js](https://william.js.org), which has much more advanced modules, better documentation, proper TypeScript support and more.
+
+---
+
 # ✨ Easy Script
 Easy Script is a npm package which makes coding in JavaScript easy!
 
